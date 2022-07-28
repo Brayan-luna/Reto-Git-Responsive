@@ -1,25 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styless.css">
+    <link rel="stylesheet" href="Tablet.css" media="screen and (max-width: 768px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
     <header class="header">
         <section class="header-sect1">
+          <figure>
             <img src="img/phone.png" alt="" class="header-img">
-            <p>
+            <figcaption>
                 +88012 3456 7895
-            </p>
-            <img src="img/message.png" alt="" class="header-img">
-            <p>
+            </figcaption>
+          </figure>
+            <figure>
+                <img src="img/message.png" alt="" class="header-img">
+            <figcaption>
                 support@ui-lib.com
-            </p>
+            </figcaption>
+            </figure>
         </section>
         <section class="header-sect2">
             <nav class="header-nav">
@@ -46,8 +54,23 @@
                 </ul>
             </nav>
         </section>
-
     </header>
+    <main>
+        <section class="main-sect-nav">
+            <p class="icon-p">
+               bazar
+            </p>
+    
+            <div class="main-input">
+                <div class="main-input-container">
+                    <span class="search-icon">
+                    </span>
+                    <input type="text">
+                    <a href="" class="micro-icon">Search</a>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>

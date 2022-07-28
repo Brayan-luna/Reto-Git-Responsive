@@ -3,8 +3,9 @@
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 14px; 
 }
+
 a{
     text-decoration: none;
 }
@@ -20,16 +21,14 @@ a{
 .header .header-sect1, .header-sect2{
     margin: 0 auto;
 }
-.header-sect1{
-    display: grid;
-    grid-template-columns: 
-    "auto auto";
+.header-sect1 figure{
+    padding: 0px 15px 0px 10px;
 }
-.header-sect1 p,img{
-    
+.header-sect1 figure ,figcaption{
+    display: inline-block;
     color: white;
-    padding: 0px 0px 0px 10px;
 }
+
 .header .header-img{
     height: 20px;
     width: 20px;
@@ -47,4 +46,67 @@ a{
 .header-sect2 , .header-nav select{
     background-color: #0F3460;
     color:white;
+}
+
+/* ------------------------main------------------ */
+.icon-p{
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Comfortaa', cursive;
+    color: #0F3460;
+}
+.main-sect-nav{
+    display: grid;
+    grid-template-areas: "auto auto auto";
+}
+main .main-input{
+    width: 390px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    padding-top: 20px;
+}
+
+main .main-input-container{
+    width: 525px;
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: grid;
+    grid-template-areas: "auto auto auto";
+  
+}
+
+main .main-input input{
+    width: 412px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+main .main-input .search-icon{
+    background-image: url(/img/lupa.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-left: 24px;
+    width: 18px;
+    height: 18px;
+}
+
+.main-input-container a{
+    background-color: #4E97FD;
+    padding: 13px;
+    border-radius: 0 100px 100px 0;
+    
+}
+
+.icon-user{
+    background-color: #F3F5F9;
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+   
+}
+.icon-user{
+    margin: 0 auto;
+    text-align: center;
 }

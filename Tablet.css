@@ -1,0 +1,19 @@
+.header-sect1{
+    text-align: center;
+}
+.header-sect1 figure{
+    padding-top: 6px;
+}
+.header-sect2{
+    text-align: center;
+}
+.main-sect-nav{
+    display: grid;
+    grid-template-areas: "auto";
+}
+main .main-input-container{
+    width: 425px;
+}
+main .main-input input{
+    width: 41px;
+}
