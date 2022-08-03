@@ -1,19 +1,156 @@
-.header-sect1{
+.header {
+    background-color: #0F3460;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: grid;
+    grid-template-areas:
+        "section1"
+        "section2";
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        " header"
+        " main"
+        " footer";
+}
+
+.header-sect1 {
     text-align: center;
 }
-.header-sect1 figure{
+
+.header-sect1 figure {
     padding-top: 6px;
 }
-.header-sect2{
+
+.header-sect2 {
     text-align: center;
 }
-.main-sect-nav{
+
+.main-sect-nav {
     display: grid;
     grid-template-areas: "auto";
 }
-main .main-input-container{
-    width: 425px;
+
+main {
+    display: grid;
+    grid-template-areas:
+        " sect1 sect3 "
+        " sect2 sect2"
+        " nav    nav "
+        "sect4  sect4"
+        "nav sect5";
 }
-main .main-input input{
-    width: 41px;
+
+/* ------------------ nav----------- */
+.nav {
+
+    grid-template-areas:
+        " sect4 sect4"
+        "sect5 sect5"
+    ;
+}
+
+.nav-div {
+    align-items: center;
+    width: 700px;
+}
+
+.sect4 {
+    width: 665px;
+    text-align: center;
+}
+
+.sect5 {
+    padding-top: 30px;
+}
+
+
+/* --------- main-sect4--------------*/
+.main-sect4{
+    grid-template-areas: 
+    "h3-Button"
+    "figure";
+}
+
+/* ------------- main sect5-------- */
+.main-sect5{
+    grid-template-rows: 40%;
+    grid-template-areas: "aside"
+    "content content"; 
+}
+.main-sect5__aside{
+    margin-left: 70px;
+}
+.main-sect5__div{
+    grid-template-areas:
+     "card1"
+    " card2"
+    "products"
+    "products2"
+    "sect6";
+}
+
+/* -------- products----- */
+.sect-products{
+    margin-top: 50px;
+    margin: 30px 0px 0px 50px;
+    grid-template-areas: 
+    "title"
+    "card1"
+    "card2"
+    "card3"
+    ;
+ }
+ .sect-products2{
+    margin-top: 50px;
+    margin: 30px 0px 0px 50px;
+    grid-template-areas: 
+    "title"
+    "card4"
+    "card5"
+    "card6"
+    ;
+ }
+
+ /* -----------sect6------------- */
+ .sect-6{
+    margin: 25px 0px 0px 97px;
+    grid-template-areas: 
+    "button"
+    "div1"
+    "div2"
+    "div3";
+}
+.button-sect6{
+    margin: 0px 0px 0px 104px; 
+}
+.sect6-div-card{
+   margin-bottom: 40px;
+   padding: 12px 0px 0px 44px;
+}.circulo-figure{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.footer{
+    margin: 80px 26px 0px 461px;
+    height: 376px;
+    grid-template-areas: 
+    "sect1"
+    "sect2";
+}
+.maargin{
+    grid-area: div;
+  
+    display: inline-block;
+   
+}
+.sect2{
+    padding-left: 20px;
+    display: grid;
+    grid-template-areas: "list div";
+    margin-top: 73px;
 }
